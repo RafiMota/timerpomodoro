@@ -1,0 +1,85 @@
+:root {
+    --cor-laranja: #eebb11;
+    --cor-vermelho: #dd5555;
+    --cor-verde: #77ee77;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #111;
+}
+
+* {
+	font-family: "Poppins", sans-serif;
+}
+
+header {
+	background-color: var(--cor-vermelho);
+	height: 10vh;
+	border-bottom: 3px var(--cor-verde) solid;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+header span {
+	color: var(--cor-laranja);
+	font-weight: 800;
+	font-size: 2em;
+}
+
+header nav {
+	display: flex;
+}
+
+header nav li a {
+	color: var(--cor-laranja);
+	font-weight: 600;
+	padding: 0em 1.5em;
+	text-decoration: none;
+}
+
+header nav li a:hover {
+    color: var(--cor-verde);
+}
+
+main {
+	background-color: var(--cor-vermelho);
+	height: 90vh;
+}
+
+section#timer {
+	text-align: center;
+	display: flex;
+	height: 100%;
+
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+section#timer h2 {
+	color: var(--cor-laranja);
+	font-size: 2em;
+	font-weight: 600;
+	margin-bottom: 1em;
+}
+
+section#timer h1 {
+	color: var(--cor-verde);
+	font-weight: 800;
+	font-size: 14em;
+}
